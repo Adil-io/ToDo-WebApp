@@ -1,0 +1,11 @@
+<mat-card>
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Enter List Title" [(ngModel)]="title">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Enter List Content" [(ngModel)]="content" (keyup.enter)="onAddPost()">
+    </mat-form-field>
+
+    <button class="example-full-width" mat-raised-button color="primary" (click)="onAddPost()">Add Item</button>
+</mat-card>
